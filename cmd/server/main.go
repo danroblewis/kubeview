@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/benc-uk/go-starter/pkg/envhelper"
+	"github.com/benc-uk/go-rest-api/pkg/envhelper"
 
 	"github.com/gorilla/mux"
 	_ "github.com/joho/godotenv/autoload" // Autoloads .env file if it exists

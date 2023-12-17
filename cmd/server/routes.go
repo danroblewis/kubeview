@@ -15,7 +15,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/benc-uk/go-starter/pkg/envhelper"
+	"github.com/benc-uk/go-rest-api/pkg/envhelper"
 	"github.com/gorilla/mux"
 
 	appsv1 "k8s.io/api/apps/v1"

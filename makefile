@@ -9,8 +9,8 @@ REPO_DIR := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 GOLINT_PATH := $(REPO_DIR)/bin/golangci-lint 
 
 # Most likely want to override these when calling `make image`
-IMAGE_REG ?= ghcr.io
-IMAGE_REPO ?= benc-uk/kubeview
+IMAGE_REG ?= danroblewis
+IMAGE_REPO ?= kubeview
 IMAGE_TAG ?= latest
 IMAGE_PREFIX := $(IMAGE_REG)/$(IMAGE_REPO)
 
