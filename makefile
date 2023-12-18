@@ -42,7 +42,7 @@ push: ## 📤 Push combined container image
 	docker push $(IMAGE_PREFIX):$(IMAGE_TAG)
 
 build-frontend: $(FRONTEND_DIR)/node_modules ## 🔨 Build & bundle Frontend / Vue.js
-	cd $(FRONTEND_DIR); npm run build
+	cd $(FRONTEND_DIR); NODE_OPTIONS=--openssl-legacy-provider npm run build
 
 build-server:  ## ⚙️  Build Go API server
 	GO111MODULE=on CGO_ENABLED=0 GOOS=linux go build \
